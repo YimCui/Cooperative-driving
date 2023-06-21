@@ -10,6 +10,10 @@
 
 
 
+https://github.com/FanGShiYuu/AWSW-PG/assets/88468647/b8c4fc08-ed25-4709-8d48-01469949a343
+
+
+
 ## Experiments
 Multiple experiments are conducted, including an ablation experiment on the Shapley value in a purely CAV environment, a comparison of efficiency and safety under different Rates of Penetration (ROP), and the significance test after heterogeneous HDVs involved. Here we focus on a supplementary explanation of the results of the study and present them in a more intuitive manner (especially via .MP4). For further knowledge acquisition, please refer to [arXiv]().
 
