@@ -13,7 +13,9 @@
 Multiple experiments are conducted, including an ablation experiment on the Shapley value in a purely CAV environment, a comparison of efficiency and safety under different Rates of Penetration (ROP), and the significance test after heterogeneous HDVs involved. Here we focus on a supplementary explanation of the results of the study and present them in a more intuitive manner (especially via .MP4). For further knowledge acquisition, please refer to [arXiv]().
 
 ### Ablation experiment on the Shapley value
-In order to facilitate the reader to understand how Shapley value is constantly changing in the process of cooperation, we use the shade of color to represent the value of the Shapley value. More specifically
+In order to facilitate the reader to understand how Shapley value is constantly changing in the process of cooperation, we use the shade of color to represent the value of the Shapley value. More specifically, the closer the color of the vehicle is to purple, the higher its Shapley value is at this moment. This indicates that the vehicle currently has a greater impact on the system. Conversely, lighter colors indicate weaker impacts on the system. Additionally, each car's normalized Shapley value is displayed next to it. The case shown in Fig.5 in the article is shown below  
+
+<video muted controls width=380> <source src="./src/5bcb4673b6c09a82.mp4"  type="video/mp4">
 
 ### Comparison under different ROP
 
@@ -22,11 +24,11 @@ In order to facilitate the reader to understand how Shapley value is constantly 
 
 ## Citation
 ```
-@misc{fang2023cooperative,
-      title={Cooperative Driving of Connected Autonomous Vehicles in Heterogeneous Mixed Traffic: A Game Theoretic Approach}, 
-      author={Shiyu Fang and Peng Hang and Chongfeng Wei and Yang Xing and Jian Sun},
+@misc{,
+      title={}, 
+      author={},
       year={2023},
-      eprint={2305.03563},
+      eprint={},
       archivePrefix={arXiv},
       primaryClass={cs.MA}
 }
