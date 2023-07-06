@@ -1,4 +1,4 @@
-# Title
+# A Potential Game-based Framework for Cooperative Driving at Mixed Un-signalized Intersections
 
 **[Shiyu Fang](https://tops.tongji.edu.cn/info/1033/1190.htm)**, [Peng Hang](https://tops.tongji.edu.cn/info/1031/1383.htm), [Jian Sun](https://tops.tongji.edu.cn/info/1031/1187.htm)  
 
