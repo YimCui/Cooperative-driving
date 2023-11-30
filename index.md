@@ -26,7 +26,6 @@ In order to facilitate the reader to understand how Shapley value is constantly 
 </div>
 
 
-
 ### Comparison under different ROP
 In this subsection, we compare the baseline and AWSW-PG(T=1) from an aggregate point of view at first. The results indicate that the implementation of the adaptive weight method provides efficient improvement for collision avoidance. A specific case comparison is shown below  
 
@@ -56,6 +55,30 @@ Considering that CAVs will continually mix with HDVs that possess various drivin
       primaryClass={cs.MA}
 }
 ```
+
+## Appendix
+
+### 1.Modeling Heterogeneous HDV
+Despite the uncertainty due to the absence of traffic lights, unpredictable and uncontrollable HV latent intention of decision may lead to even greater strait for CAVs. In order to validate the cooperative driving algorithm of CAVs in heterogeneous mixed traffic. In this section, sophisticated real-world drivers' demonstrations were extracted for reproducing heterogeneous HV decisions. 
+
+The main process consists of four steps. Firstly, interaction data from a real-world intersection were collected. Secondly, drivers' decisions were classified into three groups by K-means cluster. Then, non-cooperative game, known as a promising model to reproduce the process of human decision making, was selected to guide the generation of HVs' decision. Finally, the decision-making preference of each group was calibrated through IRL. 
+
+#### Drivers' Decisions Classification by K-means Cluster
+In order to reproduce drivers with different decision-making preferences. The first priority was to determine how many decision clusters the drivers at the intersection of XXJH can be divided into. Based on the result of the elbow method, a simple but versatile theory to determine the number of clusters using the Sum of Squared Errors (SSE), three clusters work best for our data. Considering that speed and acceleration are the most intuitive manifestation of decision making during driving, the average, maximum, minimum, and standard deviation of speed and acceleration of vehicles were taken as the clustering parameters}. K-means clustering was then used to classify naturalistic human driving data samples in XXJH.
+
+After the clustering algorithm converged, the drivers' decisions in XXJH were divided into three clusters: normal, conservative, and aggressive. Furthermore, their trajectories were used as expert demonstrations and then compared with HDVs' feasible trajectories to calibrate different decision-making preferences. In this paper, a non-cooperative game was chosen to estimate possible decisions human may adopt when confronted with other drivers because it achieves more realistic human behavior when performing conflicting maneuvers at intersections. Together with vehicle dynamics, feasible trajectories of each frame can be concluded.
+
+#### HDVs' Feasible Trajectories Generation through Non-cooperative Game
+As mentioned before, game theory describes human as a rational decision-maker who takes action dependencies into account. Hence, there is a growing application in the field of modeling human decision. In this paper, we regard human drivers as rational decision-makers and are aware of the consequence that their actions will influence other drivers who have conflict with them in temporal and spatial dimensions. Non-cooperative game was therefore established to mimic how drivers conjecture and compete with each other while driving in sharing space. We considered a sampling interval, $\Delta t=0.1s$, and an action set including six strategies that represent common driving maneuvers in urban traffic is listed below. 
+
+#### Decision-making Preference Calibration by IRL
+After dividing drivers into groups and generating feasible trajectories through non-cooperative game. IRL was introduced to excavate inherent characteristics that influence the expert decision. IRL was proposed later than behavior cloning. Though they share many similarities. Differing from simply imitating expert maneuvers, IRL tries to infer the reason why experts make their decision and then optimize the strategy. In other words, except directly learning the state-action mapping, IRL infers the form of reward weight and optimizes maneuvers through it. The pseudocode of maximum entropy IRL is summarized in Algorithm.1.
+
+After training, the reward weights of different driver groups can be calibrated through maximizing entropy and iterating, as shown below.
+
+As in Table, the aggressive driver group possessed the highest efficiency value, and lowest safety and comfort value, indicating their preference for passing at a high speed and more willingness to detour rather than stop and wait. Meanwhile, conservative drivers were more concerned about driving comfort and safety, leading to conservative decisions. The reward weights of normal drivers were in the middle range, these drivers do not have an over preference and try to balance efficiency, comfort, and safety while driving. 
+
+#### Decision-making Preference Calibration by IRL
 
 ## Contact
 
