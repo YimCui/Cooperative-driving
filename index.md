@@ -73,7 +73,7 @@ As mentioned before, game theory describes human as a rational decision-maker wh
 
 Table. Action set
 
-![framework](./src/Actionset.png)
+![framework](./src/Actionset.png width="30%")
 
 #### Decision-making Preference Calibration by IRL
 After dividing drivers into groups and generating feasible trajectories through non-cooperative game. IRL was introduced to excavate inherent characteristics that influence the expert decision. IRL was proposed later than behavior cloning. Though they share many similarities. Differing from simply imitating expert maneuvers, IRL tries to infer the reason why experts make their decision and then optimize the strategy. In other words, except directly learning the state-action mapping, IRL infers the form of reward weight and optimizes maneuvers through it. The pseudocode of maximum entropy IRL is summarized in Algorithm.1.
