@@ -73,7 +73,8 @@ As mentioned before, game theory describes human as a rational decision-maker wh
 
 Table. Action set
 
-![framework](./src/Actionset.png){width="30%"}
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Actionset.png" width="320px">
+
 
 #### Decision-making Preference Calibration by IRL
 After dividing drivers into groups and generating feasible trajectories through non-cooperative game. IRL was introduced to excavate inherent characteristics that influence the expert decision. IRL was proposed later than behavior cloning. Though they share many similarities. Differing from simply imitating expert maneuvers, IRL tries to infer the reason why experts make their decision and then optimize the strategy. In other words, except directly learning the state-action mapping, IRL infers the form of reward weight and optimizes maneuvers through it. The pseudocode of maximum entropy IRL is summarized in Algorithm.1.
@@ -84,7 +85,7 @@ After training, the reward weights of different driver groups can be calibrated 
 
 Table. IRL Calibration Results
 
-![framework](./src/Calibration-Results.png)
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Calibration-Results.png" width="420px">
 
 As in Table, the aggressive driver group possessed the highest efficiency value, and lowest safety and comfort value, indicating their preference for passing at a high speed and more willingness to detour rather than stop and wait. Meanwhile, conservative drivers were more concerned about driving comfort and safety, leading to conservative decisions. The reward weights of normal drivers were in the middle range, these drivers do not have an over preference and try to balance efficiency, comfort, and safety while driving. 
 
