@@ -71,10 +71,20 @@ After the clustering algorithm converged, the drivers' decisions in XXJH were di
 #### HDVs' Feasible Trajectories Generation through Non-cooperative Game
 As mentioned before, game theory describes human as a rational decision-maker who takes action dependencies into account. Hence, there is a growing application in the field of modeling human decision. In this paper, we regard human drivers as rational decision-makers and are aware of the consequence that their actions will influence other drivers who have conflict with them in temporal and spatial dimensions. Non-cooperative game was therefore established to mimic how drivers conjecture and compete with each other while driving in sharing space. We considered a sampling interval, $\Delta t=0.1s$, and an action set including six strategies that represent common driving maneuvers in urban traffic is listed below. 
 
+Table. Action set
+
+![framework](./src/Actionset.png)
+
 #### Decision-making Preference Calibration by IRL
 After dividing drivers into groups and generating feasible trajectories through non-cooperative game. IRL was introduced to excavate inherent characteristics that influence the expert decision. IRL was proposed later than behavior cloning. Though they share many similarities. Differing from simply imitating expert maneuvers, IRL tries to infer the reason why experts make their decision and then optimize the strategy. In other words, except directly learning the state-action mapping, IRL infers the form of reward weight and optimizes maneuvers through it. The pseudocode of maximum entropy IRL is summarized in Algorithm.1.
 
+![framework](./src/IRLAlgorithm.png)
+
 After training, the reward weights of different driver groups can be calibrated through maximizing entropy and iterating, as shown below.
+
+Table. IRL Calibration Results
+
+![framework](./src/Calibration-Results.png)
 
 As in Table, the aggressive driver group possessed the highest efficiency value, and lowest safety and comfort value, indicating their preference for passing at a high speed and more willingness to detour rather than stop and wait. Meanwhile, conservative drivers were more concerned about driving comfort and safety, leading to conservative decisions. The reward weights of normal drivers were in the middle range, these drivers do not have an over preference and try to balance efficiency, comfort, and safety while driving. 
 
