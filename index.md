@@ -79,7 +79,7 @@ Table. Action set
 #### Decision-making Preference Calibration by IRL
 After dividing drivers into groups and generating feasible trajectories through non-cooperative game. IRL was introduced to excavate inherent characteristics that influence the expert decision. IRL was proposed later than behavior cloning. Though they share many similarities. Differing from simply imitating expert maneuvers, IRL tries to infer the reason why experts make their decision and then optimize the strategy. In other words, except directly learning the state-action mapping, IRL infers the form of reward weight and optimizes maneuvers through it. The pseudocode of maximum entropy IRL is summarized in Algorithm.1.
 
-![framework](./src/IRLAlgorithm.png)
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/IRLAlgorithm.png" width="620px">
 
 After training, the reward weights of different driver groups can be calibrated through maximizing entropy and iterating, as shown below.
 
@@ -94,14 +94,14 @@ In order to verify whether the non-cooperative Bayesian game can effectively rep
 
 First of all, we can see from the result, in 92% of cases, the simulation results are the same as the original data, that is, the sequence of conflict points does not change. Secondly, we also visualized the reproduced results in Figure, where the gray lines represent human drivers' interaction trajectories from the original data, and the blue lines represent the trajectories generated using the proposed non-cooperative Bayesian game. It can be readily discerned that our proposed game-based method can effectively reproduces diverse human driver trajectories.
 
-![framework](./src/BNE-replay-simulation.png)
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/BNE-replay-simulation.png" width="720px">
 
 ### 2.Comparison with reservation-based method
 The reservation-based approach is well known for its clear principles and safety guarantees. The reservation-based system consists of an intersection manager and vehicle agents. Each approaching vehicle agent sends a request to the intersection manager to reserve certain space-time within the intersection in its desired path. In reservation-based approach, the service sequence of the vehicles is determined under simple but effective policies such as first come first served (FCFS) strategy, auction strategy, and BATCH strategy. However, the reservation-based approach often relies on deploying all vehicle agents under the control of a coordinator. In real-world mixed driving environments where HDVs are uncontrolled, this can lead to sub-optimal performance of the reservation-based approach. Therefore, we further compare the improved Depth First Search Tree (iDFST) method, a bulk right-of-way allocation approach combining vehicle conflict topology and tree search, with the potential game proposed in this manuscript (ASWS-PG(T=8)). The performance of two models are summarized as below.
 
 Table. Model performance comparison between iDFST and Potential game
 
-![framework](./src/Model-comparison.png)
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Model-comparison.png" width="620px">
 
 According to Table, the iDFST approach fails to effectively avoid collisions for each permeability. This can be attributed to the fact that in our studied mixed environment, HDVs are not connected vehicles and possess their own decision logic, thus disregarding commands from the coordinator like CAVs. To address this issue, we propose a cooperative framework that combines adaptive methods and game theory. This framework successfully identifies heterogeneous drivers within the environment and devises targeted adjustment strategies to prevent collisions. In addition, in comparison with the proposed method, the success rate and average simulation time exhibit relatively consistent performance across different permeability levels. However, as the permeability increases, the efficiency of the cooperative system controlled by iDFST approach noticeably declines. This phenomenon can be attributed to an increasing number of agents responding to the coordinator's control, resulting in a significant increase in tree depth (passing order). Given that the iDFST approach was designed to restrict entry into the intersection to right-of-way vehicles only, resulting in an increase in travel time.
 
@@ -116,7 +116,7 @@ Here, we would like to point out the reasons driving these changes in order to e
 
 Table. Changes after introducing comfort
 
-![framework](./src/Changes-introducingcomfort.png)
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Changes-introducingcomfort.png" width="620px">
 
 Table exhibits the changes after introducing comfort into our overall reward. According to the Table, it is not difficult to find that the collision rate decreases under basically each permeability after introducing comfort, especially the baseline method. We posit that this phenomenon can be attributed to the discomfort caused by abrupt changes in CAV acceleration. Therefore, rapid acceleration or rapid deceleration behavior is eliminated, thereby enhancing the comprehensibility of CAV action and ultimately improving safety levels. At the same time, we found that the efficiency of the system did not change significantly (although the success rate did change, the average simulation time actually changed very little). In conclusion, the introduction of comfort has a significant improvement on system safety with no harm to system efficiency. Therefore, the enhancement of comfort is therefore deemed highly imperative, and we would like to express our gratitude once again for the reviewer’s valuable suggestions.
 
