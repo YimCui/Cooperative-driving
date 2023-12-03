@@ -74,7 +74,8 @@ As mentioned before, game theory describes human as a rational decision-maker wh
 Table. Action set
 
 ![framework](./src/Actionset.png)
-[](<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Actionset.png" width="320px">)
+
+<img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Actionset.png" width="320px">
 
 
 #### Decision-making Preference Calibration by IRL
