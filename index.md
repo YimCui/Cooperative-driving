@@ -73,6 +73,8 @@ As mentioned before, game theory describes human as a rational decision-maker wh
 
 Table. Action set
 
+![Actionset](./src/Actionset.png)
+
 <img src="https://github.com/FanGShiYuu/AWSW-PG/blob/pages/src/Actionset.png" width="320px">
 
 
