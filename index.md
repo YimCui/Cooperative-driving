@@ -19,7 +19,7 @@ Secondly, we establish an interaction model between CAV and HDV based on the Sta
 
 Finally, to demonstrate the feasibility and effectiveness of the cooperative driving framework, cases are designed for experimental verification from multiple perspectives. We conduct the comparison of the simulation results with different methods which contains rule-based, reservation-based and reinforcement learning-based methods. Additionally, we did some validation experiments to verify the feasibility of method application including CAVs cooperative algorithm verification of domain controller in the loop and collaborative algorithm verification in mixed traffic of human driving in the loop.
 
-![framework](./src/framework.png)
+![framework](./src/framework.pdf)
 
 
 ## Simulation
