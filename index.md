@@ -52,22 +52,21 @@ Three drivers participated in this experiment. We selected the experimental resu
 
 <div align=center>
  <iframe width="560" height="315" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-上帝/2CAV-上帝.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</div>
 
 ![2CAV-上帝]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-上帝/2CAV-上帝.mp4")
-</div>
 
 <div align=center>
  <iframe width="560" height="315" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero1/2CAV-hero1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-
-![2CAV-hero1]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero1/2CAV-hero1.mp4")
 </div>
 
+![2CAV-hero1]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero1/2CAV-hero1.mp4")
 
 <div align=center>
  <iframe width="560" height="315" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero3/2CAV-hero3.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</div>
 
 ![2CAV-hero3]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero3/2CAV-hero3.mp4")
-</div>
 
 
 | <video muted controls width=380> <source src="https://resource.onsite.com.cn/temp/cym/cym-vedio"  type="video/gif"> </video> <video muted controls width=380> <source src="./vedio/2CAV_hero1.gif"  type="video/gif"> </video> |
