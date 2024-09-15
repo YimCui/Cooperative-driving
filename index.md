@@ -40,7 +40,7 @@ Multiple experiments are conducted, including an ablation experiment on the Shap
 
 ### Scenario-(1) Unprotected left turn of 2 CAVs
 <div align=center>
- <iframe width="640" height="640" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-上帝/2CAV-上帝.mp4" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
+ <iframe width="640" height="640" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-上帝/2CAV-上帝.mp4" title="2CAV-上帝" frameborder="0" allowfullscreen></iframe> 
 </div>
 
 
