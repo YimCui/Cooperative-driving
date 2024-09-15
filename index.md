@@ -46,9 +46,12 @@ As for the reinforcement learning method, Proximal Policy Optimization (PPO) alg
 | <video muted controls width=380> <source src="./vedio/RL-PPO.mp4"  type="video/mp4"> </video> |
 </div>
 
-### Case4-Proposed NonTwin
-The parameters related to the weight of HDVs reward function are determined and updated by the twin game and the parameters are fixed which are always the initial ones.
+### Case4-Proposed NonTwin & Case5-Proposed InTwin
+For the method in this paper, two cases are designed, respectively, the parameters related to the weight of HDVs reward function are determined and updated by the twin game and the parameters are fixed which are always the initial ones.
 
+<div align=center>
+| <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
+</div>
 
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> |
@@ -59,9 +62,7 @@ The parameters related to the weight of HDVs reward function are determined and 
 | <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
 </div>
 
-<div align=center>
-| <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
-</div>
+
 
 ## Experiment
 
