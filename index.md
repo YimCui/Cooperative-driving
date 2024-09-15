@@ -23,9 +23,7 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 
 
 ## Simulation
-<div align=center>
-| <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
-</div>
+
 Three kinds of methods that are reservation-based and reinforcement learning-based methods are designed based on the above environment, and the simulation results are compared with the proposed method. For the method in this paper, two cases are designed, respectively. 
 
 ### Case1-FIFO
