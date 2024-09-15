@@ -23,23 +23,35 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 
 
 ## Simulation
-
+<div align=center>
 | <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
+</div>
+
 
 ### Case1-FIFO
+<div align=center>
 | <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> |
+</div>
 
 ### Case2-Virtual IDM
+<div align=center>
 | <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
+</div>
 
 ### Case3-RL PPO
+<div align=center>
 | <video muted controls width=380> <source src="./vedio/RL-PPO.mp4"  type="video/mp4"> </video> |
+</div>
 
 ### Case4-Proposed NonTwin
+<div align=center>
 | <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> |
+</div>
 
 ### Case5-Proposed InTwin
+<div align=center>
 | <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
+</div>
 
 ## Experiment
 
