@@ -49,7 +49,13 @@ Multiple experiments are conducted, including an ablation experiment on the Shap
 
 ### Scenario-(2) Mixed traffic of 3CAV & 1HDV
 Three drivers participated in this experiment. We selected the experimental results from one of the drivers and analyzed the vehicle states at several key moments as the vehicle passed through the intersection. Additionally, we plotted the acceleration curve of the HDV and the changes in the twin parameters. Observing the HDV during the $4s-13s$ interval, when it was within the interaction range considered by the model, we found that the calculated acceleration values closely matched the actual values in terms of both overall trend and magnitude. During the vehicle's operation, the twin parameters were updated according to the rules described in the methodology section. The optimal twin parameter values for different drivers did not exhibit drastic changes as seen in simulations but rather tended to stabilize. Moreover, the optimal twin parameter values varied across different drivers.
+![2CAV-上帝]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-上帝/2CAV-上帝.mp4")
 ![2CAV-hero1]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero1/2CAV-hero1.mp4")
+![2CAV-hero3]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero3/2CAV-hero3.mp4")
+
+
+
+
 <div align=center>
 | <iframe width="560" height="315" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero1/2CAV-hero1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
