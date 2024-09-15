@@ -26,24 +26,30 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
 </div>
-
+Three kinds of methods that are reservation-based and reinforcement learning-based methods are designed based on the above environment, and the simulation results are compared with the proposed method. For the method in this paper, two cases are designed, respectively. 
 
 ### Case1-FIFO
+Choose First in First Out (\textbf{FIFO}) method as one of the reservation-based method named \textit{Case1}. Specifically, only one vehicle at the same time is allowed to enter the designated area within a certain range of the intersection (in case design, the range within 10m before the stop line and the intersection conflict area). 
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> |
 </div>
 
 ### Case2-Virtual IDM
+Virtual platoon projection method \cite{xu2018distributed} is designed as \textit{Case2}. This method converts the two-dimensional spatial position of a vehicle into a one-dimensional position by referring to the position of the conflict point between the two vehicles. The platoon formed after projection can calculate the longitude decision action according to the car-following model like IDM, called \textbf{Virtual-IDM}.
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
 </div>
 
 ### Case3-RL PPO
+As for the reinforcement learning method, Proximal Policy Optimization (PPO) algorithm has high computational efficiency, can deal with continuous action space and discrete action space problems, simple implementation, wide application range. The baseline PPO algorithm provided in Stable-Baselines3 \cite{stable-baselines3} was selected as the comparison method as \textit{Case3}. And PPO interact and train the model in the environment provided by highway-env.
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/RL-PPO.mp4"  type="video/mp4"> </video> |
 </div>
 
 ### Case4-Proposed NonTwin
+The parameters related to the weight of HDVs reward function are determined and updated by the twin game and the parameters are fixed which are always the initial ones.
+
+
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> |
 </div>
@@ -56,6 +62,7 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 ## Experiment
 
 ### Scenario-(1) Unprotected left turn of 2 CAVs
+The first experiment involved a scenario of an unprotected left turn with two CAVs to verify the possibility of CAV cooperative algorithm deployment and application under purely CAVs. Approaching from opposite directions on a stretch of road, one vehicle proceeded straight while the other executed a left turn.
 <div align=center>
  <iframe width="640" height="640" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-上帝/2CAV-上帝.mp4" title="2CAV-上帝" frameborder="0" allowfullscreen></iframe> 
 </div>
@@ -67,18 +74,19 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 
 
 ### Scenario-(2) Mixed traffic of 3CAV & 1HDV
-Three drivers participated in this experiment. We selected the experimental results from one of the drivers and analyzed the vehicle states at several key moments as the vehicle passed through the intersection. Additionally, we plotted the acceleration curve of the HDV and the changes in the twin parameters. Observing the HDV during the $4s-13s$ interval, when it was within the interaction range considered by the model, we found that the calculated acceleration values closely matched the actual values in terms of both overall trend and magnitude. During the vehicle's operation, the twin parameters were updated according to the rules described in the methodology section. The optimal twin parameter values for different drivers did not exhibit drastic changes as seen in simulations but rather tended to stabilize. Moreover, the optimal twin parameter values varied across different drivers.
+In order to verify the effectiveness of the collaborative algorithm and the twin game in the mixed traffic scenario, the second experiment was conducted in the scenario of three CAVs and one HDV. Three subjects with different driving styles were selected to complete the driving task of HDV and interact with three CAVs in the designed scenario.
 
-
+#### Driver1
 <div align=center>
 | <iframe width="275" height="275" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/3CAV1HV-Case1-上帝视角/3CAV1HV-Case1-上帝视角.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <iframe width="366" height="275" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/3CAV1HV-Case1-HV视角/3CAV1HV-Case1-HV视角.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 </div>
 
-
+#### Driver2
 <div align=center>
 | <iframe width="275" height="275" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/3CAV1HV-Case2-上帝视角/3CAV1HV-Case2-上帝视角.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <iframe width="366" height="275" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/3CAV1HV-Case2-HV视角/3CAV1HV-Case2-HV视角.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 </div>
 
+#### Driver3
 <div align=center>
 | <iframe width="275" height="275" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/3CAV1HV-Case3-上帝视角/3CAV1HV-Case3-上帝视角.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <iframe width="366" height="275" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/3CAV1HV-Case3-HV视角/3CAV1HV-Case3-HV视角.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 </div>
