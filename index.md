@@ -36,13 +36,6 @@ Multiple experiments are conducted, including an ablation experiment on the Shap
 
 ### Case5-Proposed InTwin
 
-
-
-<div align=center>
-| <video muted controls width=380> <source src="./src/ablation-case.mp4"  type="video/mp4"> </video> |
-</div>
-
-
 ## Experiment
 
 ### Scenario-(1) Unprotected left turn of 2 CAVs
