@@ -53,16 +53,6 @@ For the method in this paper, two cases are designed, respectively, the paramete
 | <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
 </div>
 
-<div align=center>
-| <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> |
-</div>
-
-### Case5-Proposed InTwin
-<div align=center>
-| <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
-</div>
-
-
 
 ## Experiment
 
