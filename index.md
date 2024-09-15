@@ -58,6 +58,10 @@ Three drivers participated in this experiment. We selected the experimental resu
 22
 ![2CAV-hero3]("https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero3/2CAV-hero3.mp4")
 
+<div align=center>
+| <iframe width="560" height="315" src="https://resource.onsite.com.cn/temp/cym/cym-vedio/2CAV-hero1/2CAV-hero1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 | <video muted controls width=380> <source src="https://resource.onsite.com.cn/temp/cym/cym-vedio"  type="video/gif"> </video> <video muted controls width=380> <source src="./vedio/2CAV_hero1.gif"  type="video/gif"> </video> |
 
 In this subsection, we compare the baseline and AWSW-PG(T=1) from an aggregate point of view at first. The results indicate that the implementation of the adaptive weight method provides efficient improvement for collision avoidance. A specific case comparison is shown below  
