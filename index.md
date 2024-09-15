@@ -36,10 +36,10 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 | <video muted controls width=380> <source src="./vedio/RL-PPO.mp4"  type="video/mp4"> </video> |
 
 ### Case4-Proposed NonTwin
-| <video muted controls width=380> <source src="./vedio/Proposed-NonTwin.mp4"  type="video/mp4"> </video> |
+| <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> |
 
 ### Case5-Proposed InTwin
-| <video muted controls width=380> <source src="./vedio/Proposed-InTwin.mp4"  type="video/mp4"> </video> |
+| <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
 
 ## Experiment
 
