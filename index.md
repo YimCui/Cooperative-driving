@@ -24,6 +24,8 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 
 ## Simulation
 
+| <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
+| <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> |
 
 ### Case1-FIFO
 
