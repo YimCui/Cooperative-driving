@@ -1,3 +1,15 @@
+<head>
+ <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+ inlineMath: [['$','$']]
+ }
+ });
+ </script>
+</head>
+
 # A Game-based Framework for Cooperative Driving at Mixed Un-signalized Intersections
 
 **[Yiming Cui](https://tops.tongji.edu.cn/info/1131/1818.htm)**, [Shiyu Fang](https://tops.tongji.edu.cn/info/1033/1190.htm), [Qian Chen](https://tops.tongji.edu.cn/info/1132/1806.htm), [Peng Hang](https://tops.tongji.edu.cn/info/1031/1383.htm), [Jian Sun](https://tops.tongji.edu.cn/info/1031/1187.htm)  
