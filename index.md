@@ -137,7 +137,7 @@ $$
 
 Where:  
 - $a_{c,old}$ and $a_{c,new}$: acceleration of vehicles before and after the lane change
-- c, n, and o: ego vehicle, new follower, and old follower
+- $c$, $n$, and $o$: ego vehicle, new follower, and old follower
 - $p$: politeness coefficient, indicating the attention given to surrounding vehicles  
 - $\Delta a_{\text{th}}$: acceleration gain required to trigger a lane change  
 
