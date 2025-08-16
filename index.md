@@ -36,33 +36,41 @@ Finally, to demonstrate the feasibility and effectiveness of the cooperative dri
 
 ## Simulation
 
+### Comparative Evaluation of Different Methods
 Three kinds of methods that are reservation-based and reinforcement learning-based methods are designed based on the above environment, and the simulation results are compared with the proposed method. For the method in this paper, two cases are designed, respectively. 
 
-### Case1-FIFO
+#### FIFO
 Choose First in First Out (FIFO) method as one of the reservation-based method. Specifically, only one vehicle at the same time is allowed to enter the designated area within a certain range of the intersection (in case design, the range within 10m before the stop line and the intersection conflict area). 
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/FIFO.mp4"  type="video/mp4"> </video> |
 </div>
 
-### Case2-Virtual IDM
+#### PIDM
 Virtual platoon projection method converts the two-dimensional spatial position of a vehicle into a one-dimensional position by referring to the position of the conflict point between the two vehicles. The platoon formed after projection can calculate the longitude decision action according to the car-following model like IDM, called Virtual-IDM.
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/Virtual-IDM.mp4"  type="video/mp4"> </video> |
 </div>
 
-### Case3-RL PPO
+#### singlePPO
 As for the reinforcement learning method, Proximal Policy Optimization (PPO) algorithm has high computational efficiency, can deal with continuous action space and discrete action space problems, simple implementation, wide application range. The baseline PPO algorithm provided in Stable-Baselines3 was selected as the comparison method. And PPO interact and train the model in the environment provided by highway-env.
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/RL-PPO.mp4"  type="video/mp4"> </video> |
 </div>
 
-### Case4-Proposed NonTwin & Case5-Proposed InTwin
+#### IPPO
 For the method in this paper, two cases are designed, respectively, the parameters related to the weight of HDVs reward function are determined and updated by the twin game and the parameters are fixed which are always the initial ones.
 
 <div align=center>
 | <video muted controls width=380> <source src="./vedio/Proposed-Nontwin.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/Proposed-Intwin.mp4"  type="video/mp4"> </video> |
 </div>
 
+### Scalability Analysis with Varying Number of Vehicles
+<div align=center>
+| <video muted controls width=380> <source src="./vedio/num-2.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/num-4.mp4"  type="video/mp4"> </video> |
+</div>
+<div align=center>
+| <video muted controls width=380> <source src="./vedio/num-8.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/num-12.mp4"  type="video/mp4"> </video> |
+</div>
 
 ## Experiment
 
