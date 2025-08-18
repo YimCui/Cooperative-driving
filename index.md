@@ -57,7 +57,7 @@ As for the reinforcement learning method, Proximal Policy Optimization (PPO) alg
 | <video muted controls width=380> <source src="./vedio/RL-PPO.mp4"  type="video/mp4"> </video> |
 </div>
 
-#### IPPO
+#### G-Nontwin & G-Twin
 For the method in this paper, two cases are designed, respectively, the parameters related to the weight of HDVs reward function are determined and updated by the twin game and the parameters are fixed which are always the initial ones.
 
 <div align=center>
