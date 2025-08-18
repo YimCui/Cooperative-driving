@@ -72,6 +72,38 @@ For the method in this paper, two cases are designed, respectively, the paramete
 | <video muted controls width=380> <source src="./vedio/num-8.mp4"  type="video/mp4"> </video> <video muted controls width=380> <source src="./vedio/num-12.mp4"  type="video/mp4"> </video> |
 </div>
 
+<div align="center">
+  <figure style="display:inline-block; margin:10px;">
+    <video muted controls width="380">
+      <source src="./vedio/num-2.mp4" type="video/mp4">
+    </video>
+    <figcaption>图 1. 2 辆车的仿真效果</figcaption>
+  </figure>
+
+  <figure style="display:inline-block; margin:10px;">
+    <video muted controls width="380">
+      <source src="./vedio/num-4.mp4" type="video/mp4">
+    </video>
+    <figcaption>图 2. 4 辆车的仿真效果</figcaption>
+  </figure>
+</div>
+
+<div align="center">
+  <figure style="display:inline-block; margin:10px;">
+    <video muted controls width="380">
+      <source src="./vedio/num-8.mp4" type="video/mp4">
+    </video>
+    <figcaption>图 3. 8 辆车的仿真效果</figcaption>
+  </figure>
+
+  <figure style="display:inline-block; margin:10px;">
+    <video muted controls width="380">
+      <source src="./vedio/num-12.mp4" type="video/mp4">
+    </video>
+    <figcaption>图 4. 12 辆车的仿真效果</figcaption>
+  </figure>
+</div>
+
 ## Experiment
 
 ### Scenario-(1) Unprotected left turn of 2 CAVs
